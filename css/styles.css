@@ -42,7 +42,7 @@ body {
 }
 
 /* =========================
-   HERO PREMIUM 2026
+            HERO
 ========================= */
 
 .hero {
@@ -112,7 +112,7 @@ body {
     height: 100px;
 }
 
-/* Capa oscura profesional */
+/* Capa oscura */
 .overlay {
     position: absolute;
     width: 100%;
@@ -146,7 +146,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* Botón elegante */
+/* Botón principal */
 .hero-btn {
     display: inline-block;
     background: #ff9800;
@@ -164,7 +164,7 @@ body {
 }
 @media (max-width: 768px) {
     .hero {
-    background-attachment: scroll; /* evita bug parallax en móviles */
+    background-attachment: scroll; 
     height: 85vh;
 }
 
@@ -290,6 +290,9 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    .contacto-container {
+    grid-template-columns: 1fr;
+}
 }
 
 .logo {
@@ -332,4 +335,75 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto-section {
+    background: #eef6f1;
+}
+
+.contacto-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.contacto-info h3 {
+    color: #bd2419;
+    margin-bottom: 20px;
+}
+
+.contacto-info p {
+    margin-bottom: 15px;
+}
+
+.horarios {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.horarios h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contacto-mapa iframe {
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   BOTÓN WHATSAPP
+========================= */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
 }
